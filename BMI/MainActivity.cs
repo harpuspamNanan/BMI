@@ -30,7 +30,38 @@ namespace BMI
             bCal = (Button)FindViewById(Resource.Id.statusBtn);
             bClr = (Button)FindViewById(Resource.Id.clrBtn);
 
-            
+            bClr.Click += delegate
+            {
+                eHeight.Text = "";
+                eWeight.Text = "";
+                eBmi.Text = "";
+                eStatus.Text = "";
+            };
+            bCal.Click += delegate
+            {
+                if (eHeight.Text != "" && eWeight.Text !="")
+                {
+                    // Calculate BMI
+                    double bmi = double.Parse(eWeight.Text) / (Math.Pow (double.Parse(eHeight.Text),2));
+                    bmi = Math.Round(bmi, 1);
+ 
+                    eBmi.Text = bmi.ToString();
+
+                    if (bmi < 18.5)
+                        eStatus.Text = "Underweight";
+                    else if (bmi >= 18.5 && bmi <= 24.9)
+                        eStatus.Text = "Healthy";
+                    else if (bmi >= 25.0 && bmi <= 29.9)
+                        eStatus.Text = "Overweight";
+                    else if (bmi >= 30.0)
+                        eStatus.Text = "Obese";
+                }
+                else if (eHeight.Text == "" && eWeight.Text == "")
+                {
+                    // Dislpay message to tell User to Input Height and Weight
+                    Toast.MakeText(this, "Please enter both the units", ToastLength.Long).Show();
+                }
+            };
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

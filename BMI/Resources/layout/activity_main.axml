@@ -23,7 +23,7 @@
 			android:id="@+id/heightTV" />
 		<EditText
 			android:inputType="numberDecimal"
-			android:layout_width="150px"
+			android:layout_width="260px"
 			android:layout_marginTop="220px"
 			android:layout_height="130px"
 			android:layout_toRightOf="@id/heightTV"
@@ -41,25 +41,46 @@
 			android:inputType="numberDecimal"
 			android:layout_below="@id/heightTV"
 			android:layout_marginTop="-12px"
-			android:layout_width="150px"
+			android:layout_width="260px"
 			android:layout_height="130px"
 			android:layout_toRightOf="@+id/weightTV"
 			android:id="@+id/weightET" />
+		<Button
+			android:text = "Calulate"
+			android:layout_below="@id/weightTV"
+			android:layout_marginTop="2px"
+			android:layout_marginLeft="100px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#1d6fd3"	
+			android:id="@+id/statusBtn"
+			/>
+		<Button
+			android:text = "Clear"
+			android:layout_below="@id/weightTV"
+			android:layout_toRightOf="@+id/statusBtn"
+			android:layout_marginTop="3px"
+			android:layout_marginLeft="10px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#db0f30"	
+			android:id="@+id/clrBtn"
+			/>
 		<TextView
 			android:text="Your BMI is : "
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_marginLeft="50px"
-			android:layout_below="@id/weightTV"
-			android:layout_marginTop="20px"
+			android:layout_below="@id/statusBtn"
+			android:layout_marginTop="70px"
 			android:layout_width="400px"
 			android:layout_height="130px"
 			android:id="@+id/bmiTV"
 		/>
 		<EditText
 			android:inputType="numberDecimal"
-			android:layout_below="@id/weightTV"
-			android:layout_marginTop="1px"
-			android:layout_width="150px"
+			android:layout_below="@id/clrBtn"
+			android:layout_marginTop="30px"
+			android:layout_width="260px"
 			android:layout_height="130px"
 			android:layout_toRightOf="@+id/bmiTV"
 			android:id="@+id/bmiET" />
@@ -68,40 +89,20 @@
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_marginLeft="50px"
 			android:layout_below="@id/bmiTV"
-			android:layout_marginTop="20px"
+			android:layout_marginTop="0px"
 			android:layout_width="400px"
 			android:layout_height="130px"
 			android:id="@+id/statusTV"
 		/>
 		<EditText
 			android:inputType="numberDecimal"
-			android:layout_below="@id/bmiTV"
-			android:layout_width="150px"
+			android:layout_below="@id/bmiET"
+			android:layout_width="260px"
 			android:layout_height="140px"
 			android:layout_marginTop="-10px"
 			android:layout_toRightOf="@+id/statusTV"
 			android:id="@+id/statusET" />
-		<Button
-			android:text = "Calulate"
-			android:layout_below="@id/statusTV"
-			android:layout_marginTop="30px"
-			android:layout_marginLeft="150px"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="#1d6fd3"	
-			android:id="@+id/statusBtn"
-			/>
-		<Button
-			android:text = "Clear"
-			android:layout_below="@id/statusTV"
-			android:layout_toRightOf="@+id/statusBtn"
-			android:layout_marginTop="30px"
-			android:layout_marginLeft="10px"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="#fc0a31"	
-			android:id="@+id/clrBtn"
-			/>
+		
 		
 		
 	</RelativeLayout>

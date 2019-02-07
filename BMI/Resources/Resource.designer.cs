@@ -2432,11 +2432,11 @@ namespace BMI
 			// aapt resource value: 0x7f080057
 			public const int blocking = 2131230807;
 			
-			// aapt resource value: 0x7f080091
-			public const int bmiET = 2131230865;
+			// aapt resource value: 0x7f080093
+			public const int bmiET = 2131230867;
 			
-			// aapt resource value: 0x7f080090
-			public const int bmiTV = 2131230864;
+			// aapt resource value: 0x7f080092
+			public const int bmiTV = 2131230866;
 			
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
@@ -2468,8 +2468,8 @@ namespace BMI
 			// aapt resource value: 0x7f08004f
 			public const int clip_vertical = 2131230799;
 			
-			// aapt resource value: 0x7f080095
-			public const int clrBtn = 2131230869;
+			// aapt resource value: 0x7f080091
+			public const int clrBtn = 2131230865;
 			
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
@@ -2783,14 +2783,14 @@ namespace BMI
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
+			// aapt resource value: 0x7f080090
+			public const int statusBtn = 2131230864;
+			
+			// aapt resource value: 0x7f080095
+			public const int statusET = 2131230869;
+			
 			// aapt resource value: 0x7f080094
-			public const int statusBtn = 2131230868;
-			
-			// aapt resource value: 0x7f080093
-			public const int statusET = 2131230867;
-			
-			// aapt resource value: 0x7f080092
-			public const int statusTV = 2131230866;
+			public const int statusTV = 2131230868;
 			
 			// aapt resource value: 0x7f0800aa
 			public const int status_bar_latest_event_content = 2131230890;
