@@ -19,8 +19,16 @@ namespace BMI
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-
-            
+            tHeight = (TextView)FindViewById(Resource.Id.heightTV);
+            tWeight = (TextView)FindViewById(Resource.Id.weightTV);
+            tBmi = (TextView)FindViewById(Resource.Id.bmiTV);
+            tStatus = (TextView)FindViewById(Resource.Id.statusTV);
+            eHeight = (EditText)FindViewById(Resource.Id.heightET);
+            eWeight = (EditText)FindViewById(Resource.Id.weightET);
+            eBmi = (EditText)FindViewById(Resource.Id.bmiET);
+            eStatus = (EditText)FindViewById(Resource.Id.statusET);
+            bCal = (Button)FindViewById(Resource.Id.statusBtn);
+            bClr = (Button)FindViewById(Resource.Id.clrBtn);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

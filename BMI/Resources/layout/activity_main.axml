@@ -81,12 +81,23 @@
 		<Button
 			android:text = "Calulate"
 			android:layout_below="@id/statusTV"
-			android:layout_centerHorizontal="true"
 			android:layout_marginTop="30px"
+			android:layout_marginLeft="150px"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:background="#1d6fd3"	
 			android:id="@+id/statusBtn"
+			/>
+		<Button
+			android:text = "Clear"
+			android:layout_below="@id/statusTV"
+			android:layout_toRightOf="@+id/statusBtn"
+			android:layout_marginTop="30px"
+			android:layout_marginLeft="10px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#fc0a31"	
+			android:id="@+id/clrBtn"
 			/>
 	</RelativeLayout>
 
