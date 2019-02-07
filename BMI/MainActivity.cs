@@ -12,7 +12,9 @@ namespace BMI
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-
+        TextView tHeight, tWeight, tBmi, tStatus;
+        EditText eHeight, eWeight, eBmi, eStatus;
+        Button bCal, bClr;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

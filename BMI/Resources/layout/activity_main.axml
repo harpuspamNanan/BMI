@@ -9,7 +9,6 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#b0d81e"
 		android:id="@+id/relativeLayout1">
 		<TextView
 			android:text="Height (in m): "
@@ -83,9 +82,10 @@
 			android:text = "Calulate"
 			android:layout_below="@id/statusTV"
 			android:layout_centerHorizontal="true"
+			android:layout_marginTop="30px"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			
+			android:background="#1d6fd3"	
 			android:id="@+id/statusBtn"
 			/>
 	</RelativeLayout>
