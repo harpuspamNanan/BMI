@@ -4,29 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#b0d81e"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:text="Height (in m): "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="50px"
+			android:layout_marginTop="250px"
+			android:layout_width="400px"
+			android:layout_height="130px"
+			android:id="@+id/heightTV" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_width="150px"
+			android:layout_marginTop="220px"
+			android:layout_height="130px"
+			android:layout_toRightOf="@id/heightTV"
+			android:id="@+id/heightET" />
+		<TextView
+			android:text="Weight (in kg): "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="50px"
+			android:layout_below="@id/heightTV"
+			android:layout_marginTop="20px"
+			android:layout_width="400px"
+			android:layout_height="130px"
+			android:id="@+id/weightTV" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_below="@id/heightTV"
+			android:layout_marginTop="-12px"
+			android:layout_width="150px"
+			android:layout_height="130px"
+			android:layout_toRightOf="@+id/weightTV"
+			android:id="@+id/weightET" />
+		<TextView
+			android:text="Your BMI is : "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="50px"
+			android:layout_below="@id/weightTV"
+			android:layout_marginTop="20px"
+			android:layout_width="400px"
+			android:layout_height="130px"
+			android:id="@+id/bmiTV"
+		/>
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_below="@id/weightTV"
+			android:layout_marginTop="1px"
+			android:layout_width="150px"
+			android:layout_height="130px"
+			android:layout_toRightOf="@+id/bmiTV"
+			android:id="@+id/bmiET" />
+		<TextView
+			android:text="You are : "
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="50px"
+			android:layout_below="@id/bmiTV"
+			android:layout_marginTop="20px"
+			android:layout_width="400px"
+			android:layout_height="130px"
+			android:id="@+id/statusTV"
+		/>
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_below="@id/bmiTV"
+			android:layout_width="150px"
+			android:layout_height="140px"
+			android:layout_marginTop="-10px"
+			android:layout_toRightOf="@+id/statusTV"
+			android:id="@+id/statusET" />
+		<Button
+			android:text = "Calulate"
+			android:layout_below="@id/statusTV"
+			android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:id="@+id/statusBtn"
+			/>
+	</RelativeLayout>
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+   
 
 </android.support.design.widget.CoordinatorLayout>
