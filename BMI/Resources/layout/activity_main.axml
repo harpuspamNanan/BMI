@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	
 	<RelativeLayout
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
+		android:background="#ffffff"
 		android:id="@+id/relativeLayout1">
+		
 		<TextView
 			android:text="Height (in m): "
 			android:textAppearance="?android:attr/textAppearanceMedium"
@@ -99,7 +102,17 @@
 			android:background="#fc0a31"	
 			android:id="@+id/clrBtn"
 			/>
+		
+		
 	</RelativeLayout>
+	<GridLayout
+			android:layout_height="250px"
+		    android:layout_width="350px"
+		android:layout_marginTop="-10px"
+		android:layout_marginLeft="190px"
+		    android:background = "@mipmap/capture"
+			android:id="@+id/gridLayout1">
+		</GridLayout>
 
    
 

@@ -29,6 +29,8 @@ namespace BMI
             eStatus = (EditText)FindViewById(Resource.Id.statusET);
             bCal = (Button)FindViewById(Resource.Id.statusBtn);
             bClr = (Button)FindViewById(Resource.Id.clrBtn);
+
+            
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
